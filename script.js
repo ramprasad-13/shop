@@ -1,55 +1,26 @@
-document.getElementById('form').addEventListener('submit', myFunction);
-
-async function myFunction(e) {
+document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
     e.preventDefault();
+
+    // 1. Get Form Values
     const name = document.getElementById('name').value;
+    const mobile = document.getElementById('mobilenumber').value;
     const email = document.getElementById('email').value;
-    const mobilenumber = document.getElementById('mobilenumber').value;
-    const message = document.getElementById('message').value;
     const address = document.getElementById('address').value;
+    const message = document.getElementById('message').value;
 
-    const formData = {
-        name,
-        mobilenumber,
-        email,
-        address,
-        message
-    };
+    // 2. Format the message (Using %0A for new lines)
+    const whatsappNumber = "919866252649"; // Added country code 91 for India
+    
+    const text = `*New Inquiry - Shree Vijay Hosiery*%0A%0A` +
+                 `*Name:* ${name}%0A` +
+                 `*Mobile:* ${mobile}%0A` +
+                 `*Email:* ${email}%0A` +
+                 `*Address:* ${address}%0A` +
+                 `*Requirements:* ${message}`;
 
-    try {
-        const response = await fetch('https://email-api-bice.vercel.app/sendemail', {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
-        console.log(response)
+    // 3. Create the WhatsApp URL
+    const url = `https://wa.me/${whatsappNumber}?text=${text}`;
 
-        if (response.status == 201) {
-            document.getElementById('exampleModalLabel').innerText = `Hey, ${name}!`;
-            document.getElementById('display-text').innerText = `I have received your mail and will respond to you shortly at ${email}.`
-            let modal = document.getElementById('exampleModal');
-            let myModal = new bootstrap.Modal(modal, {});
-            myModal.show();
-        }
-
-    } catch (error) {
-        console.error('Error sending form data:', error);
-    }
-    this.reset();
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(function (navLink) {
-        navLink.addEventListener('click', function () {
-            var bsCollapse = new bootstrap.Collapse(document.getElementById('navbarSupportedContent'), {
-                toggle: false
-            });
-            bsCollapse.hide();
-        });
-    });
+    // 4. Open in a new tab
+    window.open(url, '_blank').focus();
 });
