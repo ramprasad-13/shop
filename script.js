@@ -2,7 +2,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
     e.preventDefault();
     
     // Replace with your business phone number (include country code, no symbols)
-    const phoneNumber = "+919866252649"; 
+    const phoneNumber = "919441786401"; 
     
     const name = document.getElementById('name').value;
     const mobile = document.getElementById('mobilenumber').value;
