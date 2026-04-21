@@ -250,24 +250,50 @@
                 </div>
             </div>
 
-            <div class="glass p-6 md:p-8 rounded-3xl">
-                <p class="text-xl font-bold mb-6">Send an Inquiry</p>
-                <form id="whatsapp-form" class="space-y-4">
-                    <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="name" placeholder="Full Name" required>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <input type="number" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="mobilenumber" placeholder="Mobile Number" required>
-                        <input type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="email" placeholder="Email Address">
-                    </div>
-
-                    <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="address" placeholder="Address" required>
-                    <textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" rows="4" id="message" placeholder="Type your requirements here..." required></textarea>
-                    
-                    <button type="submit" class="w-full bg-green-600 text-white font-extrabold py-4 rounded-xl hover:bg-green-500 active:scale-[0.98] transition-all uppercase tracking-widest flex items-center justify-center gap-2 mt-2">
-                        <i class="fab fa-whatsapp text-xl"></i> Send to WhatsApp
-                    </button>
-                </form>
+<div class="max-w-2xl mx-auto px-4 py-8">
+    <div class="glass p-6 sm:p-8 md:p-10 rounded-3xl backdrop-blur-md bg-white/10 border border-white/20 shadow-2xl">
+        <p class="text-xl sm:text-2xl font-bold mb-6 text-white text-center md:text-left">Send an Inquiry</p>
+        
+        <form id="whatsapp-form" class="space-y-4">
+            <input type="text" 
+                   id="name" 
+                   class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all" 
+                   placeholder="Full Name" 
+                   required>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input type="tel" 
+                       id="mobilenumber" 
+                       class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all" 
+                       placeholder="Mobile Number" 
+                       required>
+                
+                <input type="email" 
+                       id="email" 
+                       class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all" 
+                       placeholder="Email Address">
             </div>
+
+            <input type="text" 
+                   id="address" 
+                   class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all" 
+                   placeholder="Address" 
+                   required>
+
+            <textarea id="message" 
+                      rows="4" 
+                      class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none" 
+                      placeholder="Type your requirements here..." 
+                      required></textarea>
+            
+            <button type="submit" 
+                    class="w-full bg-green-600 text-white font-extrabold py-4 rounded-xl hover:bg-green-500 active:scale-[0.98] transition-all uppercase tracking-widest flex items-center justify-center gap-2 mt-4 shadow-lg shadow-green-900/20">
+                <i class="fab fa-whatsapp text-xl"></i> 
+                <span>Send to WhatsApp</span>
+            </button>
+        </form>
+    </div>
+</div>
         </div>
     </div>
 </section>
