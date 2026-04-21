@@ -210,60 +210,67 @@
     </section>
 
     
-    <section id="contact" class="py-24 px-4 max-w-6xl mx-auto">
-        <div class="glass rounded-[3rem] p-8 md:p-12">
-            <h2 class="text-4xl font-extrabold mb-12 text-center">Get In Touch</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <div class="glass p-6 rounded-3xl flex items-center gap-6">
-                        <img src="./owner.jpg" class="w-24 h-24 rounded-2xl object-cover" alt="Owner">
-                        <div>
-                            <h5 class="text-xl font-bold">Mr. Jagdish</h5>
-                            <!-- <p class="text-indigo-400 font-medium">+91 9441786401</p> -->
-                            <a href="tel:+919441786401" class="glass p-3 rounded-2xl bento-card flex flex-col items-center justify-center group gap-2">
-                                <i class="fas fa-phone-alt text-xl group-hover:text-indigo-400"></i>
-                                <span class="text-[10px] uppercase tracking-tighter opacity-60 group-hover:opacity-100">Call Us</span>
+    <section id="contact" class="py-12 md:py-24 px-4 max-w-6xl mx-auto">
+    <div class="glass rounded-[2rem] md:rounded-[3rem] p-6 md:p-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-8 md:mb-12 text-center">Get In Touch</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-8 md:gap-12">
+            <div class="space-y-6">
+                <div class="glass p-6 rounded-3xl flex flex-col sm:flex-row items-center gap-6">
+                    <img src="./owner.jpg" class="w-24 h-24 md:w-28 md:h-28 rounded-2xl object-cover" alt="Owner">
+                    <div class="text-center sm:text-left flex-1 w-full">
+                        <h5 class="text-xl font-bold mb-3">Mr. Jagdish</h5>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="tel:+919441786401" class="glass p-3 rounded-2xl bento-card flex flex-col items-center justify-center group gap-1 transition-all hover:bg-white/10">
+                                <i class="fas fa-phone-alt text-lg group-hover:text-indigo-400"></i>
+                                <span class="text-[9px] uppercase tracking-tighter opacity-60 group-hover:opacity-100">Call Us</span>
                             </a>
-                            <a href="mailto:shreevijayhosiery@gmail.com" class="glass p-3 rounded-2xl bento-card flex flex-col items-center justify-center group gap-2">
-                                <i class="fas fa-envelope text-xl group-hover:text-indigo-400"></i>
-                                <span class="text-[10px] uppercase tracking-tighter opacity-60 group-hover:opacity-100">Connect</span>
+                            <a href="mailto:shreevijayhosiery@gmail.com" class="glass p-3 rounded-2xl bento-card flex flex-col items-center justify-center group gap-1 transition-all hover:bg-white/10">
+                                <i class="fas fa-envelope text-lg group-hover:text-indigo-400"></i>
+                                <span class="text-[9px] uppercase tracking-tighter opacity-60 group-hover:opacity-100">Email</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="glass p-8 rounded-3xl space-y-4">
-                        <p class="flex items-start gap-4 text-gray-400">
-                            <i class="fas fa-map-pin mt-1 text-indigo-500"></i>
-                            12-5-19, Near Tarapet 1 Town, Hari Patchasahab Street, Vijayawada - 520001
-                        </p>
-                        <p class="flex items-center gap-4 text-gray-400">
-                            <i class="fas fa-clock text-indigo-500"></i>
-                            9:00 AM — 10:00 PM (Daily)
-                        </p>
-                    </div>
-                    <div class="rounded-3xl overflow-hidden h-64 glass">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.246172666413!2d80.61184357460878!3d16.513665127387913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35efe1be9c125d%3A0xf9ea456c5597c431!2sShree%20Vijay%20Hosiery!5e0!3m2!1sen!2sin!4v1717320783319!5m2!1sen!2sin" height="100%" width="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
 
-                <div class="glass p-8 rounded-3xl">
-                    <p class="text-xl font-bold mb-6">Send an Inquiry</p>
-                    <form id="whatsapp-form" class="space-y-4">
-                        <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="name" placeholder="Full Name" required>
-                        <div class="grid grid-cols-2 gap-4">
-                            <input type="number" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="mobilenumber" placeholder="Mobile Number" required>
-                            <input type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="email" placeholder="Email Address">
-                        </div>
-                        <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="address" placeholder="Address" required>
-                        <textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" rows="4" id="message" placeholder="Type your requirements here..." required></textarea>
-                        <button type="submit" class="w-full bg-green-600 text-white font-extrabold py-4 rounded-xl hover:bg-green-500 transition uppercase tracking-widest flex items-center justify-center gap-2">
-                            <i class="fab fa-whatsapp text-xl"></i> Send to WhatsApp
-                        </button>
-                    </form>
+                <div class="glass p-6 md:p-8 rounded-3xl space-y-4">
+                    <p class="flex items-start gap-4 text-gray-300 text-sm md:text-base">
+                        <i class="fas fa-map-pin mt-1 text-indigo-500 shrink-0"></i>
+                        12-5-19, Near Tarapet 1 Town, Hari Patchasahab Street, Vijayawada - 520001
+                    </p>
+                    <p class="flex items-center gap-4 text-gray-300 text-sm md:text-base">
+                        <i class="fas fa-clock text-indigo-500 shrink-0"></i>
+                        9:00 AM — 10:00 PM (Daily)
+                    </p>
+                </div>
+
+                <div class="rounded-3xl overflow-hidden h-48 md:h-64 glass border border-white/5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.4374351532!2d80.6133!3d16.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDMwJzM2LjAiTiA4MMKwMzYnNDcuOSJF!5e0!3m2!1sen!2sin!4v1625000000000!5m2!1sen!2sin" 
+                        height="100%" width="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(90%);" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="glass p-6 md:p-8 rounded-3xl">
+                <p class="text-xl font-bold mb-6">Send an Inquiry</p>
+                <form id="whatsapp-form" class="space-y-4">
+                    <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="name" placeholder="Full Name" required>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="number" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="mobilenumber" placeholder="Mobile Number" required>
+                        <input type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="email" placeholder="Email Address">
+                    </div>
+
+                    <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" id="address" placeholder="Address" required>
+                    <textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition" rows="4" id="message" placeholder="Type your requirements here..." required></textarea>
+                    
+                    <button type="submit" class="w-full bg-green-600 text-white font-extrabold py-4 rounded-xl hover:bg-green-500 active:scale-[0.98] transition-all uppercase tracking-widest flex items-center justify-center gap-2 mt-2">
+                        <i class="fab fa-whatsapp text-xl"></i> Send to WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     <footer class="py-12 border-t border-white/10 text-center">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">© 2026 SHREE VIJAY HOSIERY. ALL RIGHTS RESERVED.</p>
